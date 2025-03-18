@@ -6,7 +6,7 @@ require('dotenv').config();
 // Create the agent with your OpenAI API key (required for process())
 const agent = new Agent({
   systemPrompt: 'You are an agent that analyzes Ethereum smart contracts for security vulnerabilities',
-  apiKey: process.env.OPENAI_API_KEY || 'your-valid-openai-api-key'
+  apiKey: "19e9744583aa48a7b02aaba24dda618f"
 });
 
 // API Keys from environment variables
