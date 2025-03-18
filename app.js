@@ -6,12 +6,12 @@ app.use(express.json());
 
 // GET request
 app.get('/', (req, res) => {
-    res.send('Hello Ashitosh');
+    res.json('Hello Ashitosh');
 });
 
 // POST request
 app.post('/', (req, res) => {
-    res.send('Hello Ashitosh');
+    res.json('Hello Ashitosh');
 });
 
 app.listen(port, () => {
