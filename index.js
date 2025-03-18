@@ -182,20 +182,20 @@ agent.addCapability({
 agent.start();
 
 // Now that you have a valid API key, you can call process() to trigger the conversation.
-async function main() {
-  try {
-    const result = await agent.process({
-      messages: [
-        {
-          role: 'user',
-          content: 'Analyze the smart contract at address 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
-        }
-      ]
-    });
-    console.log('Analysis result:', result.choices[0].message.content);
-  } catch (error) {
-    console.error('Error in agent process:', error);
-  }
-}
+// async function main() {
+//   try {
+//     const result = await agent.process({
+//       messages: [
+//         {
+//           role: 'user',
+//           content: 'Analyze the smart contract at address 0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
+//         }
+//       ]
+//     });
+//     console.log('Analysis result:', result.choices[0].message.content);
+//   } catch (error) {
+//     console.error('Error in agent process:', error);
+//   }
+// }
 
-main().catch(console.error);
+// main().catch(console.error);
